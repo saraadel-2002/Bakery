@@ -1,0 +1,479 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 95% !important;
+}
+body{
+    font-family: "Alegreya", serif;
+    overflow: hidden;
+}
+
+/* ****************common********************* */
+img{
+    width: 100%;
+}
+h1,h2,h3,h4{
+    font-family: "Alegreya";
+}
+p{
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    line-height: 31.62px;
+    color: #686868;
+} 
+.w-auto{
+    margin-top: -50px;
+}
+.color-icon{
+    color: #303030 !important;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+/* ********************sideBar****************** */
+#sidebar{
+    position: fixed;
+    top: 20%;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+#sidebar .color{
+    color: #686868;
+    padding: 10px;
+}
+#sidebar .color:hover{
+    color: #218fe6;
+} 
+.sidebarInner{
+    padding: 10px;
+    background-color: #ffff;
+    border-radius: 5px;
+}
+.btn-sidebar{
+    text-align: center;
+}
+.sidebarInner button{
+    padding: 20px;
+    padding-inline: 50px;
+    background-color: #8e7754;
+    color: #ffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.color-box{
+    width: 30px;
+    height: 30px;
+    background-color: #ffff;
+    display: inline-block;
+    cursor: pointer;
+}
+.gear-icon i{
+    padding: 10px;
+    background-color: #ffffff;
+    color: #686868;
+}
+.img-box{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* ********************keyup****************** */
+#keyUp{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#686868;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    top: 90%;
+    bottom: 0;
+    right: 20px;
+    z-index: 99;
+    display: none;
+    padding-inline: 8px;
+}
+#keyUp .font-size{
+    font-size: 20px !important;
+    text-align: center;
+}
+
+
+/* ********************loading screen****************** */
+#loading{
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 10px solid;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite alternate;
+  }
+  @keyframes animloader {
+    0% {
+      border-color: white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    }
+    33% {
+      border-color: white white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    }
+    66% {
+      border-color: white white white rgba(255, 255, 255, 0);
+    }
+    100% {
+      border-color: white white white white;
+    }
+  } 
+
+
+/* ********************navbar****************** */
+.navbar .container .logo img{
+    width: 150px !important;
+}
+.navbar .container ul a{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Alegreya";
+    line-height: 31.62px;
+}
+.navbar .dropdown-menu{
+    margin-top: 20px;
+    background-color: #433e37 !important;
+    box-shadow: rgba(0, 0, 0, 0.06) 2px 1px 4px 1px;
+    color: #ffffffb9 !important;
+}
+.navbar .dropdown-menu .dropdown-item:hover{
+    background-color: #ae9768 !important;
+    color: #ffffff;
+}
+.logo-color{
+    display: none;
+}
+
+
+/* ********************home****************** */
+#home{
+    background-image: url("../images/drew-coffman-1872.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    overflow: auto;
+}
+#home .caption{
+    color: #ffff;
+    text-align: center;
+    margin-top: 180px;
+}
+#home .caption h1{
+    font-size: 76px;
+    line-height: 91.2px;
+}
+#home .caption p{
+    font-size: 24px;
+    line-height: 44.64px;
+    font-family: "Alegreya Sans";
+    width: 52%;
+    margin: auto;
+    color: #ffff;
+}
+#home .caption span{
+    font-size:22px;
+    line-height: 40.92px;
+}
+#home .caption button{
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 22.1px;
+    margin-inline: 10px;
+}
+#home .caption .btn1{
+    background-color: #8e7754;
+    border: 1px solid #8e7754;
+    color: #ffff;
+    border: none;
+    font-weight: bold;
+}
+#home .caption .btn2{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #ffff;
+    font-weight: bold;
+}
+#home .caption .btn1:hover ,#home .caption .btn2:hover {
+    background-color: #ffff;
+    color: #111111;
+}
+#home .mouse-dot{
+    margin: auto;
+    margin-top: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+    width: 35px;
+    height: 55px;
+    border-radius: 24px;
+    text-indent: -9999px; 
+    position: relative;
+    cursor: pointer
+}
+#home .mouse-dot .mouse-dot-move{
+    height: 8px;
+    width: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    animation: mouse-animation 2.5s infinite linear
+}
+@keyframes mouse-animation {
+    0%{
+        top: 6px;
+        left: 12px;
+    }
+    25%{
+        top: 15px;
+        left: 12px;
+    }
+    50%{
+        top: 25px;
+        left: 12px;
+    }
+    75%{
+        top: 30px;
+        left: 12px;
+    }
+    100%{
+        top: 6px;
+        left: 12px;
+    }
+}
+
+
+/* ********************about****************** */
+#about{
+    padding-block: 100px;
+}
+#about .row .caption h2{
+    font-size: 32px;
+    line-height: 44.16px;
+    color: #303030;
+    margin-bottom: 20px;
+}
+#about .row .caption li span{
+    color: #686868;
+    font-size: 17px;
+    line-height: 31.62px;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+}
+#about .row .caption .font-style{
+    color: #8e7754;
+    font-size: 22px;
+    border: 1px solid #6868683d;
+    line-height: 44px; 
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+
+/* ********************our offer****************** */
+#ouroffer{
+    padding-block: 100px;
+    background-color: #f8f8f8;
+}
+#ouroffer .row .info h2{
+    font-size: 32px;
+    line-height: 44.16px;
+    color: #303030;
+}
+#ouroffer .row .info .paragraph1{
+    margin-bottom: 10px;
+    width: 110%;
+}
+#ouroffer .row .info .paragraph2{
+    margin-bottom: 10px;
+}
+
+
+/* ********************our Baking****************** */
+#ourBaking{
+    padding-block: 100px;
+}
+#ourBaking .title h2{
+    font-size: 30px;
+    line-height: 41.4px;
+}
+#ourBaking .row .caption{
+    text-align: center;
+    margin-top: 10px;
+}
+#ourBaking .row .caption h4{
+    font-size: 22px;
+    line-height: 30.36px;
+    color: #303030;
+}
+#ourBaking .row .caption p{
+    width: 105%;
+}
+
+
+/* ********************contact****************** */
+#contact{
+    padding-block: 100px;
+    background-color: #f8f8f8;
+}
+#contact .title h2{
+    font-size: 32px;
+    line-height: 44.16px;
+    color: #303030;
+}
+#contact .title p{
+    width: 105%;
+} 
+#contact .title ul li{
+    padding-block: 10px;
+}
+#contact .title li span{
+    color: #686868;
+    font-size: 17px;
+    line-height: 31.62px;
+    display: inline-block;
+}
+#contact .title .text-color{
+    background-color: #8e7754;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/* ********************footer****************** */
+/* footer-1 */
+#footer-1{
+    background-color: #403d38;
+    padding-block: 80px;
+}
+#footer-1 h4{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24.84px;
+}
+#footer-1 .info span{
+    font-size: 16px;
+    line-height: 29.76px;
+    color: #969696;
+    width: 95%;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#footer-1 .main span{
+    font-size: 16px;
+    line-height: 29.76px;
+    color: #969696;
+}
+#footer-1 .main .font-size{
+    color: #969696;
+    font-size: 16px;
+    margin-inline: 5px;
+}
+#footer-1 .main a{
+    text-decoration: none;
+    color: #969696;
+    font-size: 16px;
+    line-height: 31.62px;
+}
+#footer-1 .contact-details{
+    background-image: url("../images/contact-details-map.png");
+    background-size: cover;
+    height: 20vh;
+    background-color:#403d38 ;
+}
+
+
+/* footer-2 */
+#footer-2{
+    padding-block: 80px;
+    background-color: #353330;
+}
+#footer-2 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer-2 .caption{
+    text-align: center;
+    color: #777777;
+    font-size: 15px;
+    line-height: 27.9px;
+}
+#footer-2 .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#footer-2 .icons a{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 5px;
+    color: #8c8a86;
+    background-color: #484540;
+    font-size: 15px;
+    line-height: 27.9px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#footer-2 .icons a i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#footer-2 .facebook:hover{
+    background-color: #3b5998;
+    color: #ffffff;
+}
+#footer-2 .google:hover{
+    background-color: #dd4b39;
+    color: #ffffff;
+}
+#footer-2 .linked:hover{
+    background-color: #007bb5;
+    color: #ffffff;
+}
+#footer-2 .twitter:hover{
+    background-color: #00aced;
+    color: #ffffff;
+}

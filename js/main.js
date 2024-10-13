@@ -8,10 +8,12 @@ $(function () {
 
     // loading screen
     $('.loader').fadeOut(500 , function(){
-        $('#loading').slideUp(500)
-        $('body').css('overflow','auto');
-        $('body').remove('overflow','hidden');
-    });
+        $('#loading').slideUp(500 , function(){
+            $('body').css('overflow','auto');
+            $('#loading').remove();
+        });
+       
+    })
 
 
 
@@ -22,7 +24,6 @@ $(function () {
         if(windowScroll > aboutOffset - 560){
             $('.navbar').css('backgroundColor','#ffff');
             $('.navbar .container ul a').css('color','#595959');
-            $('.navbar .container .active').css('color','#111111');
             $('.logo-color').css('display','block');
             $('#keyUp').css('display','block');
         }

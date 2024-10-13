@@ -4,7 +4,7 @@
 } 
 body{
     font-family: "Alegreya", serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* ****************common********************* */
 img{
@@ -204,7 +204,8 @@ p{
 /* ********************home****************** */
 #home{
     background-image: url("../images/drew-coffman-1872.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: center center;
     background-attachment: fixed;
     height: 110vh;
     overflow: auto;

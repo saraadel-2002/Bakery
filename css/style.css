@@ -1,13 +1,10 @@
 *{
     text-decoration: none;
     list-style: none;
-}
-.container{
-    width: 95% !important;
-}
+} 
 body{
     font-family: "Alegreya", serif;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 /* ****************common********************* */
 img{
@@ -207,9 +204,9 @@ p{
 /* ********************home****************** */
 #home{
     background-image: url("../images/drew-coffman-1872.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 110vh;
     overflow: auto;
 }
 #home .caption{
@@ -228,6 +225,7 @@ p{
     width: 52%;
     margin: auto;
     color: #ffff;
+    margin-bottom: 25px;
 }
 #home .caption span{
     font-size:22px;
@@ -239,6 +237,7 @@ p{
     font-size: 17px;
     line-height: 22.1px;
     margin-inline: 10px;
+    margin-bottom: 20px;
 }
 #home .caption .btn1{
     background-color: #8e7754;

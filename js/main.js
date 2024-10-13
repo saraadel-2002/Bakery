@@ -21,7 +21,7 @@ $(function () {
     $(window).on('scroll' , function(){
         let aboutOffset = $('#about').offset().top
         let windowScroll = $(window).scrollTop();
-        if(windowScroll > aboutOffset - 560){
+        if(windowScroll > aboutOffset - 650){
             $('.navbar').css('backgroundColor','#ffff');
             $('.navbar .container ul a').css('color','#595959');
             $('.logo-color').css('display','block');
